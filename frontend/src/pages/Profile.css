@@ -1,0 +1,52 @@
+.profile-page {
+  padding: calc(80px + var(--space-lg)) 0 var(--space-lg);
+  min-height: 100vh;
+  background: var(--bg-900);
+}
+
+.profile-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-tabs .nav-link {
+  color: var(--muted);
+  border: none;
+  background: transparent;
+}
+
+.profile-tabs .nav-link.active {
+  color: var(--accent);
+  background: rgba(173, 33, 255, 0.1);
+}
+
+.tab-content-wrapper {
+  padding: var(--space-lg) 0;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: var(--space-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  z-index: 2;
+}
+
+.profile-input {
+  background: var(--bg-900);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--fg);
+  padding-left: 40px;
+}
+
+.profile-input:focus {
+  background: var(--bg-900);
+  border-color: var(--accent);
+  color: var(--fg);
+  box-shadow: 0 0 0 2px rgba(173, 33, 255, 0.2);
+}

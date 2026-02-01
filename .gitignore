@@ -1,0 +1,96 @@
+# Backend (Spring Boot)
+EVChargerSpringBoot/target/
+EVChargerSpringBoot/.mvn/
+EVChargerSpringBoot/mvnw
+EVChargerSpringBoot/mvnw.cmd
+EVChargerSpringBoot/.metadata/
+EVChargerSpringBoot/.settings/
+EVChargerSpringBoot/.classpath
+EVChargerSpringBoot/.project
+EVChargerSpringBoot/apache-maven-3.9.5/
+EVChargerSpringBoot/maven.zip
+
+# Frontend (React)
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Node modules anywhere
+node_modules/
+**/node_modules/
+
+# Package files
+package-lock.json
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Visual Studio
+.vs/
+**/.vs/
+*.vsidx
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+
+# Sensitive files
+application-local.properties
+application-local.yml
+.env
+
+# Compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# .NET (if any)
+EVChargerAPI/bin/
+EVChargerAPI/obj/
+EVChargerAPI/.vs/
+*.user
+*.suo

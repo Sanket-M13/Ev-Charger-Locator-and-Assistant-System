@@ -1,0 +1,73 @@
+spring:
+  application:
+    name: evcharger-api
+  
+  datasource:
+    url: jdbc:mysql://localhost:3306/evcharger_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: cdac
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+  
+  security:
+    jwt:
+      secret-key: your-super-secret-jwt-key-that-is-at-least-32-characters-long
+      expiration: 604800000
+      issuer: EVChargerAPI
+      audience: EVChargerClient
+  
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: your-email@gmail.com
+    password: your-app-password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 5000
+
+logging:
+  level:
+    com.evcharger.api: DEBUG
+
+cors:
+  allowed-origins:
+    - http://localhost:5173
+    - http://localhost:5174
+    - http://localhost:3000
+  allowed-methods:
+    - GET
+    - POST
+    - PUT
+    - DELETE
+    - OPTIONS
+  allowed-headers: "*"
+  allow-credentials: true
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+google:
+  client:
+    id: 136132833303-it5fu9sevrlsg9gdr1rioeob4pnok707.apps.googleusercontent.com
+
+razorpay:
+  key:
+    id: rzp_test_your_key_id
+    secret: your_key_secret
